@@ -1,0 +1,17 @@
+html
+    head
+        title= 'REJESTRACJA'
+    style
+        include style.css
+    body
+        h1= "rejestracja"
+        h2.acch2 Zarejestruj się
+        form.accform(action="/rejestracja" method="post")
+            input(type="hidden" name="_csrf" value=csrftoken)
+            label(for="username") Nazwa użytkownika
+            input(type="text" name="username" maxlength="30" size="20" required)
+            label(for="password") Hasło
+            input(type="password" name="password" maxlength="30" size="20" required)
+            button.accbutton(type="submit") Zarejestruj
+        if info
+            p.accwarning=info

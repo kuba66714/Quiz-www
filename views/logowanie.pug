@@ -1,0 +1,17 @@
+html
+    head
+        title= 'Logowanie'
+    style
+        include style.css
+    body
+        h1= "logowanie"
+        h2.acch2 Zaloguj się
+        form.accform(action="/logowanie" method="post")
+            input(type="hidden" name="_csrf" value=csrftoken)
+            label(for="username") Nazwa użytkownika
+            input#username(type="text" name="username" maxlength="30" size="20" required)
+            label(for="password") Hasło
+            input#password(type="password" name="password" maxlength="30" size="20" required)
+            button#loginBtn(type="submit") Zaloguj
+        if warning
+            p= "Nie udalo sie zalogowac"

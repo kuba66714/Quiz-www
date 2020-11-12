@@ -1,0 +1,12 @@
+html
+    head
+        title= 'Zmiana hasla'
+    style
+        include style.css
+    body
+        h1= "Zmiana hasla"
+        form(action="/zmiana_hasla" method="post")
+            input(type="hidden" name="_csrf" value=csrftoken)
+            label(for="password") Nowe haslo
+            input(type="password" name="password" maxlength="30" size="20" required)
+            button#zmien_haslo(type="submit") Zmien haslo

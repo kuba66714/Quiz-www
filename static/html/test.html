@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Lab 5</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='/css/style.css'>
+    
+</head>
+
+<body>
+    <div id="naglowek">
+        <p id="wstep">Moj Quiz<br>Rozpocznij przyciskiem start.<br>
+            Przycisk nastepny prowadzi do nastepnego pytania, a poprzedni do poprzedniego<br>
+            Przyciskiem anuluj mozna anulowac test i nie zapisywac statystyk<br>
+            Przyscisk stop pojawia sie po odpowiedzeniu na wszystkie pytania, konczy test i oblicza punktacje</p>
+        <div id="dostepUzytkownika">
+            <form action="/logowanie" method="get">
+                <button id="logowanie" type="submit">Zaloguj sie</button>
+            </form>
+            <form action="/rejestracja" method="get">
+                <button id="rejestracja" type="submit">Zarejestruj sie</button>
+            </form>
+            <form action="/wylogowanie" method="get">
+                <button id="wylogowanie" type="submit">Wyloguj sie</button>
+            </form>
+        </div>
+    </div>
+    
+    <div id="start_div">
+        <button id="start_btn">Start</button>
+        <ol id="stat">
+        </ol>
+    </div>
+    <div id="wrapper" class="srodek_div">
+        <div id="dodatkoweinfo">
+            <article id="kara"></article>
+            <article id="numerpytania"></article>
+            <article id="liczbapytan"></article>
+            <article id="odliczanie"><p id="timer"></p></article>
+        </div>
+        <div id="main_question_div">
+    
+            <article id="question_text"></article>
+        
+            <div id="answer">
+                <input id="text_odp" type="text" name="answer">
+            </div>
+        </div>
+        <div id="guziki">
+            <button class="button">Anuluj</button>
+            <button class="button">Stop</button>
+            <button class="button">Poprzednie</button>
+            <button class="button">Nastepne</button>
+        </div>
+        <div id="app"></div>
+    </div>
+    <div id="wyniki_div" class="srodek_div">
+        <div id="rezultat">
+
+        </div>
+        <button class = "stat_btn">Zapisz wynik</button>
+        <button class = "stat_btn">Zapisz wynik ze statystykami</button>
+    </div>
+</body>
+</html>

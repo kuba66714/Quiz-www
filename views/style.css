@@ -1,0 +1,77 @@
+#wstep {
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.srodek_div {
+    background-color: blue;
+    position: absolute;
+    width: 100%;
+    margin-top: -10%;
+}
+#main_question_div {
+    text-align: center;
+}
+
+
+.button {
+    background-color: green;
+    border: none;
+    color: white;
+    padding: 7px 16px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+  }
+
+#guziki {
+    margin-top: 10px;
+    text-align: center;
+}
+#dodatkoweinfo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+#timer {
+      display: inline;
+  }
+#start_div {
+    text-align: center;
+}
+#start_btn {
+    width: 200px;
+    height: 200px;
+    font-size: 50px;
+}
+.srodek_div {
+    text-align: center;
+    background-color: blueviolet;
+    position: absolute;
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+    margin-top: -5%;
+}
+@media screen and (max-width: 640px) {
+    #start_div {
+        max-width: 640px;
+    }
+    .srodek_div {
+        margin-top: -30%;
+        max-width: 640px;
+    }
+}
+#dostepUzytkownika {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+#wylogowanie {
+    position: absolute;
+    
+}
+.rezarticle {
+    font-size: small;
+}

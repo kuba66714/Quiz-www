@@ -1,0 +1,26 @@
+html
+    head
+        title= 'Strona glowna'
+    style
+        include style.css
+    body
+        div#naglowek
+            p#wstep   Moj Quiz<br>Rozpocznij przyciskiem start.<br>
+                     | Przycisk nastepny prowadzi do nastepnego pytania, a poprzedni do poprzedniego<br>
+                     | Przyciskiem anuluj mozna anulowac test i nie zapisywac statystyk<br>
+                     | Przyscisk stop pojawia sie po odpowiedzeniu na wszystkie pytania, konczy test i oblicza punktacje
+
+            
+            div#main_question_div
+                article#question_text
+                div#answer
+                    input#text_odp(type="text" name="answer")
+            
+            div#guziki
+                button.button Anuluj
+                button.button Stop
+                button.button Poprzednie
+                button.button Nastepne
+        script(src="/js/scr.js")
+        
+

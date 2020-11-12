@@ -1,0 +1,13 @@
+html
+    head
+        title= 'Wybierz test'
+    style
+        include style.css
+    body
+        h1#statyOgolneH= "Wybierz test"
+        select#wyborTestow
+            each test in tests
+                option(value= test.id) #{"test numer: " + test.id}
+
+        button#rozpocznijTest Rozpocznij test
+        script(src="/js/script2.js")

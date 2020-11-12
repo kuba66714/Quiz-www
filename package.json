@@ -1,0 +1,28 @@
+{
+  "name": "wwwduze1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "tsc test1 && node test1.js",
+    "createdb": "tsc createdb.ts && node createdb.js",
+    "build": "tsc database.ts && tsc server.ts && tsc ./static/js/scr.ts",
+    "runapp": "node server.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "csurf": "^1.11.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "md5": "^2.2.1",
+    "multer": "^1.4.2",
+    "pug": "^3.0.0",
+    "selenium-webdriver": "^4.0.0-alpha.7",
+    "sqlite3": "^4.2.0"
+  },
+  "devDependencies": {
+    "@types/node": "^14.0.13"
+  }
+}

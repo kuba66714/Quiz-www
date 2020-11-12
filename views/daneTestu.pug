@@ -1,0 +1,32 @@
+html
+    head
+        title= 'Statystyki testu'
+    style
+        include style.css
+    body
+        h1#statyOgolneH= "Statystyki testu numer " + testId + " uzytkownika " + login
+
+        h2= "Poprawne odpowiedzi"
+        ul#poprawneOdp
+            each correctAnswer in correctAnswers
+                li
+                    p= "Pytanie numer: " + correctAnswer.id + " poprawna odpowiedz " + correctAnswer.text
+
+        h2= "Twoje odpowiedzi:"
+        ul#odpUzytkownika
+            each answer in answers
+                li
+                    p= "Pytanie numer: " + answer.id + " twoja odpowiedz " + answer.text + " jest " + answer.czyPoprawna
+
+        h2= "Trzy najlepsze wyniki"
+        ul#trzyNajlepsze
+            each score in scores
+                li
+                    p= "Uzytkownik: " + score.username + " wynik " + score.totalScore
+
+        h2= "Sredni czas poprawnej odpowiedzi"
+        ul#srednieCzasy
+            each meanTime in meanTimes
+                li
+                    p= "Sredni czas pytania: " + meanTime.id + " to " + meanTime.meanTime
+       

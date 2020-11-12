@@ -1,0 +1,11 @@
+html
+    head
+        title= 'Statystyki testow'
+    style
+        include style.css
+    body
+        h1#statyOgolneH= "Statystyki testow"
+        ul#tablicaTestow
+            each test in tests
+                li
+                    a(href="test/" + test.id) #{"Zobacz test numer: " + test.id}
